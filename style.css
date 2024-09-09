@@ -1,0 +1,12 @@
+body{
+    margin: 20px;
+    padding: 20px;
+}
+
+#bodyCalc{
+    background-color: grey;
+}
+#ContenedorCalculadora{
+    background-color: rgb(100, 100, 100);
+    color: rgb(16, 141, 16);
+}
