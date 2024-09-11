@@ -1,12 +1,28 @@
 body{
     margin: 20px;
     padding: 20px;
+    background-color: #afcaee;
 }
 
 #bodyCalc{
     background-color: grey;
 }
 #ContenedorCalculadora{
-    background-color: rgb(100, 100, 100);
+ /*   background-color: rgb(100, 100, 100);*/
     color: rgb(16, 141, 16);
+}
+.aalert alert-primary {
+    color: #75c41a; /* color interno del acordeon */
+}
+#botonFirst{
+    color: #000000;
+    background-color: rgb(71, 58, 255);
+   
+}
+
+#resultado{
+    color: #000000;
+    background-color: rgb(42, 27, 255);
+    margin: 0px;
+    padding: 0px;
 }
