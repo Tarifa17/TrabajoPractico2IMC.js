@@ -1,15 +1,27 @@
+
 body{
     margin: 20px;
     padding: 20px;
     background-color: #afcaee;
+
+
 }
 
-#bodyCalc{
-    background-color: grey;
+
+form{
+    background-image: url(https://i.pinimg.com/564x/22/80/ba/2280bacf5cedd69b960552c9a8a6045c.jpg);
+    height: 600px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 8px solid green;
+    
 }
 #ContenedorCalculadora{
  /*   background-color: rgb(100, 100, 100);*/
     color: rgb(16, 141, 16);
+
 }
 .aalert alert-primary {
     color: #75c41a; /* color interno del acordeon */
@@ -25,4 +37,40 @@ body{
     background-color: rgb(42, 27, 255);
     margin: 0px;
     padding: 0px;
+
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    border-radius: 4px;
+}
+
+#data{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+button{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
 }

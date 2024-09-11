@@ -12,20 +12,20 @@
 <body>
     <form action="">
         <div class="container text-center" id="bodyCalc">
-            <div class="row">
-                <div class="column" style="max-width: 100%;" id="ContenedorCalculadora">
+                <div class="d-flex align-content-center flex-wrap flex-direction: column">
+                    <div class="col-12" id="ContenedorCalculadora">
                     <p> <h1> Calculador IMC</h1></p>
-                </div>
-                <div class="column">
-                    <div class="row">
-                    <label for="name"> Nombre: </label>
-                    <input type="text" id="name">
+                    </div>
+                    <div class="col-12" id="data">
+                        <div class="row">
+                        <label for="name"> Nombre: </label>
+                        <input type="text" id="name">
 
-                    <label for="surname"> Apellido: </label>
-                    <input type="text" id="surname">
+                        <label for="surname"> Apellido: </label>
+                        <input type="text" id="surname">
 
-                    <label for="kg"> Peso: </label>
-                    <input type="number" id="kg">
+                        <label for="kg"> Peso: </label>
+                        <input type="number" id="kg">
 
                     <label for="height"> Altura: </label>
                     <input type="number" id="height">
@@ -35,10 +35,8 @@
                     <p>Paciente: <span id="paciente"></span></p>
                     <p>Nivel de peso: <span id="nivelPeso"></span></p>            
         
-
                 </div>
                 </div>
-            </div>
         </div>
     </form>
 </body>
