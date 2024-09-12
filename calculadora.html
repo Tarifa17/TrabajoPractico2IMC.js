@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <div id="ContenedorCalculadora" class="container text-center">
     <div class="column" style="max-width: 100%;" id="ContenedorCalculadora">
         <p> <h1> Calculador IMC</h1></p>
     </div>
@@ -29,7 +30,7 @@
                 <input type="number" class="form-control" id="height" placeholder="">
             </div>
             <div class="d-grid gap-2">
-                <button class="btn btn-primary"  id="botonFirst" type="button">CALCULAR</button>
+                <button class="btn btn-primary"  id="botonFirst" type="button" onclick="calcular()">CALCULAR</button>
              
               </div >
               <div class="alert alert-primary"id="resultado" role="alert">
@@ -38,6 +39,8 @@
                 <p>Nivel de peso: <span id="nivelPeso"></span></p>    
 
               </div>
+      
+            </div>
       </div>
 </body>
 </html>
