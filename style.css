@@ -43,16 +43,16 @@ form{
     color: #98e4e4; /* color interno del acordeon */
 }
 #botonFirst{
-    color: #00637c;
-    background-color: #74efff;
-    border-color: #04c3f3;
+    color: #000000;
+    background-color: #27e4fd;
+    border-color: #05cdff;
    
 }
 
 #resultado{
-    color: #059db1;
-    background-color: #74efff;
-    border-color: #04c3f3;
+    color: #000000;
+    background-color: #27e4fd;
+    border-color: #05cdff;
     margin: 10px;
     padding: 20px;
 
