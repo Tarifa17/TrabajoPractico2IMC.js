@@ -1,34 +1,47 @@
 function calcularIMC(peso, altura){
     let imc = 0; 
-    imc = peso / altura ^ 2;
-    let nombre = document.getElementById('formGroupExampleInput');
-    let apellido = document.getElementById('formGroupExampleInput2');
+    imc = (peso / Math.pow(altura, 2)); //(altura ** 2);
+
+    console.log("Peso:", peso);
+    console.log("Altura:", altura);
+    console.log("IMC calculado:", imc);
+
+    let nombre = document.getElementById('formGroupExampleInput').value;
+    let apellido = document.getElementById('formGroupExampleInput2').value;
+
+    const imcSpan = document.getElementById('imcSpan');
+    imcSpan.textContent = imc;
+    const paciente = document.getElementById('paciente');
+    paciente.textContent = nombre + apellido;
+    const nivelPeso = document.getElementById('nivelPeso');
+    nivelPeso.textContent = 'Bajo Peso';
+
     if (imc < 18.5) {
-        const imcSpan = document.getElementById('imcSpan');
+        /* const imcSpan = document.getElementById('imcSpan');
         imcSpan.textContent = imc;
         const paciente = document.getElementById('paciente');
         paciente.textContent = nombre + apellido;
         const nivelPeso = document.getElementById('nivelPeso');
-        nivelPeso.textContent = 'Bajo Peso';
+        nivelPeso.textContent = 'Bajo Peso'; */
         console.log("Bajo peso");
     } else if (imc >= 18.5 && imc <= 24.9) {
-        let nivelPeso = "Peso saludable";
-        document.createElement(nivelPeso);
+        nivelPeso.textContent = 'Peso Saludable' ;
         console.log("Peso saludable");
     } else if (imc >= 25.0 && imc <= 29.9) {
-        let nivelPeso = "Sobrepeso";
-        document.createElement(nivelPeso);
+        nivelPeso.textContent = 'Sobrepeso' ;
         console.log("Sobrepeso");
     }
     else {
-        let nivelPeso = "Obesidad";
-        document.createElement(nivelPeso);
+        nivelPeso.textContent = 'Obesidad' ;
         console.log("Obesidad");
     } 
 }
 function calcular(){
-    let altura = document.getElementById('height');
-    let peso = document.getElementById('kg');
+    let altura = parseFloat(document.getElementById('height').value);
+    let peso = parseFloat(document.getElementById('kg').value);
     calcularIMC(peso, altura);
 };
+
+/*document.getElementById('imcForm').addEventListener('submit', function(event) {
+    event.preventDefault();*/
 
