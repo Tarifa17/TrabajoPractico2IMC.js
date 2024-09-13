@@ -10,7 +10,7 @@ function calcularIMC(peso, altura){
     let apellido = document.getElementById('formGroupExampleInput2').value;
 
     const imcSpan = document.getElementById('imcSpan');
-    imcSpan.textContent = imc;
+    imcSpan.textContent = imc.toFixed(2);
     const paciente = document.getElementById('paciente');
     paciente.textContent = nombre + apellido;
     const nivelPeso = document.getElementById('nivelPeso');
